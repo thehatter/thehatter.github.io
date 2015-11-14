@@ -9,11 +9,21 @@ dl, dd, ol, ul, figure {
 }
 
 
-
+html{
+  height: 100%;
+}
 /**
  * Basic styling
  */
 body {
+
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  min-height: 100%;
+
+
+
     font-family: $base-font-family;
     font-size: $base-font-size;
     line-height: $base-line-height;
@@ -130,7 +140,7 @@ code {
     font-size: 15px;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
-    background-color: #eef;
+    background-color: #ECECEC;
 }
 
 code {
