@@ -4,7 +4,7 @@ title: Resume
 permalink: /resume/
 ---
 
-### Skills
+Now working on red{code} design agency
 
 - **html 4/5 + css, css3, scss + slim, haml, cross-browser, mobile** <br>
   experience: 10 years
