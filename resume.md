@@ -7,7 +7,7 @@ permalink: /resume/
 
 Now working on red{code} design agency (2010-2016)
 
-####Skills:
+#### Skills:
 
 - **html 4/5 + css, css3, scss + slim, haml, cross-browser, mobile** <br>
   experience: 10 years
@@ -28,5 +28,5 @@ Now working on red{code} design agency (2010-2016)
   vim: realy love this editor
   remote: prefer remote jobs, i think it's more efficient way to do job.
 
-####Education:
+#### Education:
 - Design, Industrial Design - Vitesk VSTU (2007-2012)
