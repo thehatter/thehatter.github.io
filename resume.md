@@ -5,7 +5,7 @@ permalink: /resume/
 ---
 
 
-Now working on red{code} design agency (2010-now)
+Now working on red{code} design agency (2010- now)
 
 #### Skills:
 
@@ -26,7 +26,7 @@ Now working on red{code} design agency (2010-now)
 - **Other** <br>
   drupal: experience: 6 years (theme development, electronic commerce e.t.c)
   vim: realy love this editor
-  remote: prefer remote jobs, i think it's more efficient way to do job.
+  remote: prefer remote jobs, i think it's more efficient way to do job
 
 #### Education:
 - Design, Industrial Design - Vitesk VSTU (2007-2012)
