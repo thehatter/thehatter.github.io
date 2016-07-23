@@ -5,7 +5,7 @@ permalink: /resume/
 ---
 
 
-Now working on red{code} design agency (2010- now)
+Now working on red{code} design agency (2010-now)
 
 #### Skills:
 
