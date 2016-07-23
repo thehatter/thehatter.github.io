@@ -4,14 +4,17 @@ title: Resume
 permalink: /resume/
 ---
 
-Now working on red{code} design agency
+
+Now working on red{code} design agency (2010-2016)
+
+####Skills:
 
 - **html 4/5 + css, css3, scss + slim, haml, cross-browser, mobile** <br>
   experience: 10 years
 - **Javascript, jQuery** <br>
   experience: 6 years
 - **Ruby on Rails** <br>
-  experience: 3 years
+  experience: 1 year
 - **UI, UX** <br>
   experience: 5 years
 - **Linux, OS X** <br>
@@ -21,4 +24,9 @@ Now working on red{code} design agency
 - **Adobe Photoshop, Illustrator** <br>
   experience: 12 years
 - **Other** <br>
-  drupal – experience: 6 years (theme development, electronic commerce e.t.c)
+  drupal: experience: 6 years (theme development, electronic commerce e.t.c)
+  vim: realy love this editor
+  remote: prefer remote jobs, i think it's more efficient way to do job.
+
+####Education:
+- Design, Industrial Design - Vitesk VSTU (2007-2012)
