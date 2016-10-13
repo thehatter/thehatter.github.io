@@ -16,7 +16,7 @@ I’m going to use:
 
 Ok. Lets start:
 
-{% highlight js %}
+```js
 var request = require("request"),
     cheerio = require("cheerio"),
     fs = require("fs"),
@@ -36,12 +36,12 @@ request(url, function (error, response, body) { //getting page from url
     console.log("We’ve encountered an error: " + error);
   }
 });
-{% endhighlight %}
+```
 
-{% highlight bash %}
+```bash
 hatter$ node simple_get_value.js
 17 690
-{% endhighlight %}
+```
 
 
 Now i want ad function for saving rate in JSON file:
@@ -93,7 +93,8 @@ And now we can create simple page that will show us the rate!
 
 First let’s create index.html file
 
-{% highlight html %}
+
+```
 <!DOCTYPE html>
 <html>
   <head>
@@ -112,12 +113,12 @@ First let’s create index.html file
     <script type="text/jsx;harmony=true" src="scripts/example.js"></script>
   </body>
 </html>
-{% endhighlight %}
+```
 
 Now we can create new react component!
 
 
-{% highlight js %}
+```js
 var Curs_holder = React.createClass({
   loadCursFromServer: function() {
     $.ajax({
@@ -161,4 +162,4 @@ React.render(
   <Curs_holder url="curs_json.json" pollInterval={2000} />,
   document.getElementById('content')
 );
-{% endhighlight %}
+```
