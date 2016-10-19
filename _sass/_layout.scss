@@ -200,6 +200,11 @@ padding: $spacing-unit 0;
     font-size: 20px;
 }
 
+.post {
+  background: #fff;
+  padding: 2em;
+}
+
 .post-list {
     margin-left: 0;
     list-style: none;
@@ -217,9 +222,9 @@ padding: $spacing-unit 0;
 
 a.post-link {
     display: block;
-    font-size: 34px;
-    font-weight:bold;
-    color:#5A5D5B;
+    font-size: 1.4em;
+    font-weight: 500;
+    color: #555;
     line-height:1.1;
 }
 
