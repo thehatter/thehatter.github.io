@@ -12,17 +12,61 @@
 
 
 .header_black {
-  height: 250px;
+  height: 300px;
   background: #282828;
+
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
-.header_black .logo{
-  height: 250px;
-  width: 100%;
-  background: url(img/logo.png) center 35% no-repeat;
+.logo_link {
+  display:flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.logo_container {
+   perspective: 200; 
+}
+
+.logo_a {
+  width: 130px;
+  margin: -10px 0 40px 0;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  animation: 2s linear 1s 2 alternate move_eye;
+
+}
+
+.logo_a polygon {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear forwards;
 }
 
 
+@keyframes move_eye { 
+  to { 
+    transform: rotateY( 180deg );
+  } 
+}
+@keyframes dash { 
+  to { 
+    stroke-dashoffset: 0;
+  } 
+}
+
+.andreiLiotenko {
+  width: 500px;
+  max-width: 100%;
+}
 
 .site-title {
     font-size: 26px;
