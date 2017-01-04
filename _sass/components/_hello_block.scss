@@ -1,0 +1,18 @@
+// hello_block.scss
+
+.hello_block {
+  background: #fff;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 10px 0 40px 0;
+}
+
+.hello_block .hello_photo{
+  min-width: 220px;
+
+}
+
+.hello_block .text{
+  flex-grow: 1;
+  padding: 20px 28px;
+}

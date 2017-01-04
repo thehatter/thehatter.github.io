@@ -2,7 +2,7 @@
 title: Andrei Liotenko Blog
 email: andrewlutenko@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  My name is Andrei and i am web developer, ui designer and artist. 
+  My name is Andrei and i am web developer, ui designer and artist.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://thehatter.github.io" # the base hostname & protocol for your site
 twitter_username: AndreiLiotenko
@@ -10,3 +10,12 @@ github_username:  thehatter
 
 # Build settings
 markdown: kramdown
+
+collections:
+  portfolio:
+    output: true
+    permalink: /portfolio/:path/
+
+sass:
+  sass_dir: _sass
+  # style: compressed

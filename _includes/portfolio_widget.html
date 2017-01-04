@@ -1,0 +1,15 @@
+<div class="portfolio">
+  {% assign sorted_portfolio = site.portfolio | sort: 'order' %}
+  {% for portfolio in sorted_portfolio %}
+    <div class="portfolio_item">
+      <div class="img"><img src="{{ portfolio.img[0].url }}" alt="{{ portfolio.img[0].title}}"/></div>
+      <div class="right_part">
+        <h2>
+          <a class="portfolio_link" href="{{ portfolio.url | prepend: site.baseurl }}">{{ portfolio.title }}</a>
+        </h2>
+        <div class="year">{{ portfolio.year }}</div>
+        <div class="content">{{ portfolio.content }}</div>
+      </div>
+    </div>
+  {% endfor %}
+</div>

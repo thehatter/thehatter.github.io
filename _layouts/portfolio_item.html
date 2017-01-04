@@ -1,0 +1,42 @@
+---
+layout: default
+---
+<div class="portfolio-item">
+
+  <div class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+  </div>
+
+  <article class="post-content">
+    {{ content }}
+  </article>
+
+  {% if page.main_img %}
+    <div class="portfolio-item-main">
+      <img src="{{ page.main_img }}" alt="{{ page.title }}"/>
+      {% if page.main_phone %}
+        <div class="main-phone">
+          <div class="container">
+            <div class="in">
+              <img src="{{ page.main_phone }}" alt="{{ page.title }}"/>
+            </div>
+          </div>
+          <img src="{{ '/assets/img/phone_1.png' | prepend: site.baseurl }}"/>
+        </div>
+      {% endif %}
+    </div>
+  {% endif %}
+
+  {% if page.portfolio_images %}
+    <div class="portfolio-images">
+      {% for img in page.portfolio_images %}
+        <div class="img"><img src="{{ img.url }}" alt="{{ img.title}}"/></div>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+
+
+
+</div>

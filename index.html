@@ -2,8 +2,20 @@
 layout: default
 ---
 
-<div class="home">
+<div class="hello_block">
+  <div class="hello_photo">
+    <img src="{{ "/assets/img/hello.png" | prepend: site.baseurl }}" alt="Thats me">
+  </div>
+  <div class="text">
+    <h2>Hello!  I'm Andrei - web developer, front-end master and ui designer.</h2>
+    <p>
+      I really love to do things that i never do before. I love to design great interfaces, 
+      build useful web-sites and do a good job. If i can do something for you - please contact me!
+    </p>
+  </div>
+</div>
 
+<div class="home">
   <ul class="post-list">
     {% for post in site.posts %}
       <li class="post_list_li post">

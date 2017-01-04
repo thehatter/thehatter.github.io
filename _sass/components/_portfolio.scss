@@ -1,0 +1,69 @@
+// portfolio.scss
+
+.portfolio_item {
+  background: #fff;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 10px 0 40px 0;
+}
+
+.portfolio_item .hello_photo {
+  min-width: 220px;
+}
+
+.portfolio_item .right_part {
+  flex-grow: 1;
+  padding: 20px 28px;
+}
+
+.portfolio_item h2 {
+  margin: 0;
+  padding: 0 0 0 0;
+
+}
+.portfolio_item h2 a {
+  font-weight: 500;
+  font-size: 1.3em;
+  color: $text-gray;
+}
+
+.portfolio_item .year {
+  color: $text-gray;
+  font-size: 1.4em;
+  font-weight: 300;
+  margin: 0 0 20px 0;
+}
+
+
+.portfolio-item-main {
+  position: relative;
+  margin: 0 0 40px 0;
+}
+
+.portfolio-item-main .main-phone {
+  position: absolute;
+  right: -40px;
+  top: -86px;
+}
+
+.main-phone .container{
+  margin: 0 auto;
+  position: relative;
+
+
+  .in {
+    position: absolute;
+    top: 86px;
+    left: 22px;
+    width: 292px;
+    height: 516px;
+    overflow: hidden;
+    overflow-y: scroll;
+    vertical-align: top;
+
+    img {
+
+    }
+  }
+
+}

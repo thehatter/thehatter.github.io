@@ -1,72 +1,7 @@
+
 /**
  * Site header
  */
-.site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
-
-    // Positioning context for the mobile navigation icon
-    position: relative;
-}
-
-
-.header_black {
-  height: 300px;
-  background: #282828;
-
-    display:flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-}
-
-.logo_link {
-  display:flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-}
-
-.logo_container {
-   perspective: 200px; 
-}
-
-.logo_a {
-  width: 130px;
-  margin: -10px 0 40px 0;
-  transform-style: preserve-3d;
-  transition: transform 1s;
-  animation: 2s linear 1s 1 alternate move_eye;
-
-}
-
-.logo_a polygon {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  animation: dash 5s linear forwards;
-}
-
-
-@keyframes move_eye { 
-  to { 
-    transform: rotateY( 180deg );
-  } 
-}
-@keyframes dash { 
-  to { 
-    stroke-dashoffset: 0;
-  } 
-}
-
-.andreiLiotenko {
-  width: 500px;
-  max-width: 100%;
-}
 
 .site-title {
     font-size: 26px;
@@ -151,13 +86,12 @@
  */
 .site-footer {
   display: flex; // set the context
-  flex: 1; // flex an equal amt of space yo!
   align-items: flex-end; // make that shit sit on the bottom dawg.
   justify-content: center;
 
   background: #282828;
   color: #fff;
-  
+
 }
 .site-footer .wrapper_wrapper{
 padding: $spacing-unit 0;
@@ -238,6 +172,7 @@ padding: $spacing-unit 0;
  */
 .page-content {
     padding: $spacing-unit 0;
+    flex: 1;
 }
 
 .page-heading {
@@ -285,7 +220,7 @@ a.post-link {
     font-size: 34px;
     letter-spacing: -1px;
     line-height: 1;
-    font-weight: bold;
+    font-weight: 400;
     color: #5A5D5B;
 
     @include media-query($on-laptop) {
