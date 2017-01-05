@@ -181,7 +181,7 @@ padding: $spacing-unit 0;
 
 .post {
   background: #fff;
-  padding: 2em 2em 0 2em;
+  padding: 2em;
 }
 
 .post-list {
@@ -191,6 +191,8 @@ padding: $spacing-unit 0;
     > li {
         margin-bottom: 90px;
         margin-top: 10px;
+        padding: 2em 2em 0 2em;
+
     }
 }
 
