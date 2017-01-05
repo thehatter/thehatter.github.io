@@ -13,7 +13,7 @@ img:
     title: MECADA ARHITECT corporative site
 
 main_img: /assets/img/port_main_mecada_1.jpg
-main_phone: /assets/img/mob_mecada.png
+main_phone: /assets/img/mob_mecada.jpg
 
 portfolio_images:
   - url: /assets/img/por_item_mecada_1.jpg
@@ -23,5 +23,4 @@ portfolio_images:
 ---
 
 MECADA ARHITECT corporative site
-
-
+[mecada.pro](http://www.mecada.pro/en)

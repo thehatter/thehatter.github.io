@@ -45,6 +45,7 @@ $on-laptop:        800px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import 'base/base_styles';
+@import 'components/main_header';
 @import 'components/big_header';
 @import 'components/portfolio';
 @import 'components/hello_block';

@@ -25,6 +25,7 @@
   font-weight: 500;
   font-size: 1.3em;
   color: $text-gray;
+  text-transform: uppercase;
 }
 
 .portfolio_item .year {
@@ -37,7 +38,7 @@
 
 .portfolio-item-main {
   position: relative;
-  margin: 0 0 40px 0;
+  margin: 0 0 60px 0;
 }
 
 .portfolio-item-main .main-phone {
@@ -66,4 +67,14 @@
     }
   }
 
+}
+
+
+.portfolio-images .img {
+  margin: 0 0 60px 0;
+}
+
+.portfolio-images img {
+  width: 100%;
+  height: auto !important;
 }

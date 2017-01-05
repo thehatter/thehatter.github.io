@@ -2,18 +2,21 @@
 layout: portfolio_item
 title:  vimplugins.com
 year: 2014
-order: 2
+order: 3
 
 img:
   - url: /assets/img/port_cube_vimpligins.jpg
-    alt: MECADA ARHITECT corporative site
-    title: MECADA ARHITECT corporative site
+    alt: Vimplugins site
+    title: Vimplugins site
 
 portfolio_images:
   - url: /assets/img/port_item_vimplugins_1.jpg
-    alt: MECADA ARHITECT corporative site
-    title: MECADA ARHITECT corporative site
+    alt: Vimplugins site
+    title: Vimplugins site
+  - url: /assets/img/port_item_vimplugins_2.jpg
+    alt: Vimplugins site
+    title: Vimplugins site
 
 ---
 
-Vimplugins site
+Vimplugins project
