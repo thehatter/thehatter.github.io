@@ -1,36 +1,51 @@
 // portfolio.scss
 
+.portfolio {
+}
+
+.portfolio_items {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
 .portfolio_item {
+  max-width: calc(50% - 20px);
   background: #fff;
   display: flex;
   flex-wrap: nowrap;
-  margin: 10px 0 40px 0;
+  margin: 10px 10px 40px 10px;
 }
 
 .portfolio_item .hello_photo {
   min-width: 220px;
 }
 
+.portfolio_item .img {
+  max-width: 220px;
+}
+
 .portfolio_item .right_part {
   flex-grow: 1;
-  padding: 20px 28px;
+  margin: 20px 26px;
 }
 
 .portfolio_item h2 {
+  line-height: 1.1;
   margin: 0;
   padding: 0 0 0 0;
 
 }
 .portfolio_item h2 a {
   font-weight: 500;
-  font-size: 1.3em;
+  font-size: 1.2em;
   color: $text-gray;
   text-transform: uppercase;
 }
 
 .portfolio_item .year {
   color: $text-gray;
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-weight: 300;
   margin: 0 0 20px 0;
 }

@@ -1,6 +1,6 @@
 ---
 layout: portfolio_item
-title:  Fedoristov studio site
+title:  Fedoristov studio
 year: 2016
 order: 2
 

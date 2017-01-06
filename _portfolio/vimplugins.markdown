@@ -19,4 +19,4 @@ portfolio_images:
 
 ---
 
-Vimplugins project
+Vimplugins project - plugins rating for Vim editor
