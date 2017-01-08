@@ -8,9 +8,6 @@ img:
   - url: /assets/img/port_cube_fedoristov.jpg
     alt: Fedoristov architecture studio site
     title: Fedoristov architecture studio site
-  - url: /assets/img/potfolio_big_mecada.png
-    alt: Fedoristov architecture studio site
-    title: Fedoristov architecture studio site
 
 main_img: /assets/img/port_fedoristov_main.jpg
 main_phone: /assets/img/mob_fedoristov.jpg
