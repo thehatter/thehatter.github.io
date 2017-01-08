@@ -54,12 +54,27 @@
 .portfolio-item-main {
   position: relative;
   margin: 0 0 60px 0;
+
+  @include media-query(800px) {
+    & {
+      display: none;
+    }
+  }
+
 }
+
+
 
 .portfolio-item-main .main-phone {
   position: absolute;
   right: -40px;
   top: -86px;
+
+  @include media-query(1210px) {
+    & {
+      right: -10px;
+    }
+  }
 }
 
 .main-phone .container{
@@ -71,14 +86,14 @@
     position: absolute;
     top: 86px;
     left: 22px;
-    width: 292px;
+    width: 293px;
     height: 516px;
     overflow: hidden;
     overflow-y: scroll;
     vertical-align: top;
+    background: #fff;
 
     img {
-
     }
   }
 
