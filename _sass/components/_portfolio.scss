@@ -5,12 +5,13 @@
 
 .portfolio_items {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   margin: 0 -10px;
 }
 
 .portfolio_item {
-  max-width: calc(50% - 20px);
+  width: calc(50% - 20px);
   background: #fff;
   display: flex;
   flex-wrap: nowrap;
