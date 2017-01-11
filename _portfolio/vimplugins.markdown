@@ -20,3 +20,4 @@ portfolio_images:
 ---
 
 Vimplugins project - plugins rating for Vim editor
+Ruby, Rails, scss, js
