@@ -5,10 +5,28 @@
   display: flex;
   flex-wrap: nowrap;
   margin: 10px 0 40px 0;
+
+  @include media-query(800px) {
+    & {
+      flex-direction: column;
+    }
+  }
 }
 
 .hello_block .hello_photo{
   min-width: 220px;
+  height: auto;
+
+  img {
+    max-width: 100%;
+  }
+
+  @include media-query(800px) {
+    & {
+      width: 100%;
+      text-align: center;
+    }
+  }
 
 }
 
@@ -16,3 +34,5 @@
   flex-grow: 1;
   padding: 20px 28px;
 }
+
+
