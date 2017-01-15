@@ -24,6 +24,12 @@
 
 .portfolio_item .img {
   max-width: 220px;
+  min-width: 220px;
+  @include media-query(800px) {
+    & {
+      min-width: auto;
+    }
+  }
 }
 
 .portfolio_item .right_part {

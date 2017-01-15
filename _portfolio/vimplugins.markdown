@@ -2,10 +2,10 @@
 layout: portfolio_item
 title:  vimplugins.com
 year: 2014
-order: 3
+order: 4
 
 img:
-  - url: /assets/img/port_cube_vimpligins.jpg
+  - url: /assets/img/port_cube_vimplugins_v3.jpg
     alt: Vimplugins site
     title: Vimplugins site
 
