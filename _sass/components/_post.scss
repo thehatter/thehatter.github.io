@@ -1,0 +1,32 @@
+// post.scss
+
+.post .center{
+  text-align: center;
+
+}
+
+/*p.bg_img {*/
+  /*background: #333;*/
+  /*padding: 0px;*/
+  /*text-align: center;*/
+  /*margin: 16px -2em;*/
+/*}*/
+
+/*p.bg_img img{*/
+  /*padding: 10px;*/
+  /*margin: 10px 0;*/
+  /*background-color: #fff;*/
+/*}*/
+
+
+
+.post img {
+    margin: 16px 0;
+}
+
+.post img.fw {
+    max-width: 200%;
+    vertical-align: middle;
+    width: calc(100% + 4em);
+    margin: 16px -2em;
+}

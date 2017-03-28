@@ -2,7 +2,8 @@
 layout: post
 title:  "Simple hash generation and parsing"
 date:   2015-12-05 22:00:00
-categories: scripts python parsing
+lang: en
+tags: scripts python parsing
 ---
 
 Today i will create script to:

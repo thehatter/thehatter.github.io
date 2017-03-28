@@ -218,7 +218,8 @@ a.post-link {
  * Posts
  */
 .post-header {
-    margin-bottom: $spacing-unit;
+    margin-bottom: 20px;
+    min-height: 20px;
 }
 
 .post-title {

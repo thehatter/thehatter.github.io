@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body class="page-lang-{{ page.lang }}">
+
+    {% include header.html %}
+
+    <div class="page-content">
+      <div class="wrapper">
+
+        <div class="post-header">
+          {% include lang_swith.html %}
+        </div>
+
+        {{ content }}
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

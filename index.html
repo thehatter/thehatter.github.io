@@ -1,5 +1,6 @@
 ---
 layout: front
+lang: en
 ---
 
 <div class="hello_block">
@@ -16,9 +17,10 @@ layout: front
   </div>
 </div>
 
+{% assign posts=site.posts | where:"lang", page.lang %}
 <div class="home">
   <ul class="post-list">
-    {% for post in site.posts %}
+    {% for post in posts %}
       <li class="post_list_li post">
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 

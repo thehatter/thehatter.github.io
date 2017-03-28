@@ -11,6 +11,10 @@ github_username:  thehatter
 # Build settings
 markdown: kramdown
 
+
+#permalinks config
+permalink: /:categories/:title.html
+
 collections:
   portfolio:
     output: true

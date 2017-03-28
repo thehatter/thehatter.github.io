@@ -2,7 +2,8 @@
 layout: post
 title:  "Real time exchange rates with node.js and facebook react!"
 date:   2015-10-30 15:38:12
-categories: js react node parsing
+lang: en
+tags: js react node parsing
 ---
 
 Today i want to create some sort of dashboard with exchange rates. It’s really actual information because  rates changes avery hour, sometimes even every minute)

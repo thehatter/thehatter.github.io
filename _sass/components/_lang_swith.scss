@@ -1,0 +1,27 @@
+// lang_swith.scss
+
+.lang_swith {
+  float: right;
+  ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: flex-end;
+  }
+  ul li {
+    list-style: none;
+    padding: 0 0 0 10px;
+    margin: 0;
+  }
+
+  a {
+    font-size: 18px;
+    color: #666;
+    text-transform: uppercase;
+  }
+}
+
+.page-lang-en a.en, .page-lang-ru a.ru{
+   font-weight: 400;
+}
+
