@@ -3,6 +3,7 @@ layout: post
 title:  "Real time exchange rates with node.js and facebook react!"
 date:   2015-10-30 15:38:12
 lang: en
+share: private
 tags: js react node parsing
 ---
 

@@ -10,4 +10,4 @@ E-mail:  [andrewlutenko@gmail.com](mailto:andrewlutenko@gmail.com)
 
 Twitter: [@AndreiLiotenko](https://twitter.com/AndreiLiotenko)
 
-Skype:   andrew_l_l_l
+Telegram: [@mad_hattter](https://t.me/mad_hattter)

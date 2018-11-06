@@ -7,7 +7,7 @@ lang: en
 ref: blog
 ---
 
-{% assign posts=site.posts | where:"lang", page.lang %}
+{% assign posts=site.posts %}
 <div class="home">
   <ul class="post-list">
     {% for post in posts %}

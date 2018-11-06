@@ -3,6 +3,7 @@ layout: post
 title:  "Simple hash generation and parsing"
 date:   2015-12-05 22:00:00
 lang: en
+share: private
 tags: scripts python parsing
 ---
 
