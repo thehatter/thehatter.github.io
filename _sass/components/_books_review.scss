@@ -1,0 +1,38 @@
+// books_review.scss
+
+.book_list_item {
+  display: flex;
+  padding: 10px 0;
+
+  img {
+    margin: 0;
+    min-width: 160px;
+    max-width: 160px;
+  }
+  @include media-query($on-palm) {
+    flex-wrap: wrap;
+    flex-direction: column;
+    img {
+      margin-bottom: 14px;
+    }
+  }
+
+  @include min-media-query($on-palm) {
+    .left {
+      padding-right: 20px;
+    }
+  }
+
+  .title {
+    font-weight: bold;
+  }
+  .author {
+  }
+  .date {
+  }
+  .text {
+    margin-top: 16px;
+  }
+
+
+}

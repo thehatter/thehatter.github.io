@@ -40,7 +40,11 @@ $on-laptop:        800px;
         @content;
     }
 }
-
+@mixin min_media-query($device) {
+    @media screen and (min-width: $device) {
+        @content;
+    }
+}
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
@@ -51,6 +55,7 @@ $on-laptop:        800px;
 @import 'components/hello_block';
 @import 'components/lang_swith';
 @import 'components/post';
+@import 'components/books_review';
 @import 'layout/layout';
 
 /*@import 'pages/module';
