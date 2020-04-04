@@ -1,0 +1,135 @@
+// _dark_header.scss
+
+.dark_header {
+  background: $main_dark;
+  
+  header {
+    display: flex;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+svg.logo_on_header {
+  height: 68px;
+  width: auto;
+  margin: -2px 0;
+}
+
+.logo_name {
+  font-size: 24px;
+  letter-spacing: 6px;
+}
+
+
+
+// ================================== //
+// header-menu
+// ================================== //
+
+.header-menu {
+  position: absolute;
+  top: -600px;
+  left: 0;
+  width: 100%;
+  transition: all 0.5s ease;
+  background: #fff;
+  z-index: 200;
+  
+  .menuActive & {
+    top: 60px;
+
+  }
+}
+
+.menuActive .header-menu::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: #000;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.header-menu ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.header-menu li {
+  list-style: none;
+  width: 100%;
+  border-bottom: 1px solid #F0F0F0;
+}
+
+.header-menu li a {
+  color: #333;
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-align: center;
+  
+  display: block;
+  padding: 20px;
+}
+
+@media (min-width: 600px) {
+
+  .header-menu {
+    flex: 1;
+    display: flex;
+    position: relative;
+    top: auto;
+    left: auto;
+    width: auto;
+    transition: left 0.5s ease;
+    background: none;
+
+    .menuActive & {
+      transition: left 0.5s ease;
+      left: 0;
+    }
+  }
+
+
+.header-menu ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-content: flex-start;
+    align-items: center;
+
+    float: right;
+}
+.header-menu li {
+  width: auto;
+  border-bottom: none;
+  
+  &:not(:first-child) {
+      padding-left: 25px;
+  }   
+}
+
+  .header-menu li a {
+    color: #fff;
+    font-size: 1.1rem;
+    text-decoration: none;
+    text-align: center;
+    
+    display: inline-block;
+    padding: 10px 0px;
+    
+ 
+  }
+
+}

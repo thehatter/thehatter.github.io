@@ -4,8 +4,6 @@
 @charset "utf-8";
 
 
-
-
 // Our variables
 $base-font-family: 'Roboto', Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
@@ -18,6 +16,7 @@ $text-color:       #111;
 $text-gray:        #3A3734;
 $background-color: #F5F2F0;
 $brand-color:      #2a7ae2;
+$main_dark:        #282828;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -47,8 +46,10 @@ $on-laptop:        800px;
 }
 
 
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import 'base/base_styles';
+@import 'components/dark_header';
 @import 'components/main_header';
 @import 'components/big_header';
 @import 'components/portfolio';
@@ -56,6 +57,8 @@ $on-laptop:        800px;
 @import 'components/lang_swith';
 @import 'components/post';
 @import 'components/books_review';
+@import 'components/hot_block';
+@import 'components/books_block';
 @import 'layout/layout';
 
 /*@import 'pages/module';

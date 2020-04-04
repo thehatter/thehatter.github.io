@@ -4,6 +4,11 @@ email: andrewlutenko@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   My name is Andrei and i am web developer, ui designer and artist.
 baseurl: "" # the subpath of your site, e.g. /blog/
+assets_url: "/assets/img/"
+post_assets_url: "/assets/img/post_imgs/"
+post_cover_placeholder: "/assets/img/post_imgs/cover_placeholder.gif"
+book_cover_placeholder: "/assets/img/book_imgs/book_cover_placeholder.gif"
+book_assets_url: "/assets/img/book_imgs/"
 url: "http://thehatter.github.io" # the base hostname & protocol for your site
 twitter_username: AndreiLiotenko
 github_username:  thehatter
@@ -19,6 +24,10 @@ collections:
   portfolio:
     output: true
     permalink: /portfolio/:path/
+  books:
+    output: true
+    permalink: /book/:path/
+
 
 sass:
   sass_dir: _sass

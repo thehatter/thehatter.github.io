@@ -17,23 +17,55 @@ lang: en
   </div>
 </div>
 
-{% assign posts=site.posts %}
-<div class="home">
-  <ul class="post-list">
-    {% for post in posts %}
-      <li class="post_list_li post">
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<div class="hot_block items_in_3">
+  <!--{% assign hot_posts=site.posts | where: "hot", "true" %}-->
+  {% assign hot_posts=site.posts %}
+  {% for post in hot_posts %}
+    <a class="hot_post" href="{{ post.url | prepend: site.baseurl }}" style="{{ post.cover_image | prepend: site.post_assets_url }}">
+      {% if post.cover_image %}
+        <span class="img">
+          <img alt="{{post.title}}" src="{{ post.cover_image | prepend: site.post_assets_url }}">
+        </span>
+      {% endif %}
+      {% if post.cover_image == undefined %}
+        <span class="img">
+          <img alt="{{post.title}}" src="{{ site.post_cover_placeholder }}">
+        </span>
+      {% endif %}
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+      <span class="over_img">
+        <span class="date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <span class="title"> {{post.title}} </span>
+      </span>
+    </a>
+  {% endfor %}
+</div>
 
-        <div>
-          {{ post.content }}
-        </div>
-      </li>
+<h2>Обзоры книг</h2>
+<div class="books_block">
+  {% assign books=site.books %}
+  {% for book in books %}
+    <a class="book" href="{{ book.url | prepend: book.baseurl }}">
+      <span class="img"><img src="{{ book.cover_image | prepend: site.book_assets_url }}" alt="{{book.title}}"></span>
+      <span class="title">{{book.title}}</span>
+      <span class="author">{{ book.author }}</span>
+    </a>
+  {% endfor %}
+
+  {% if books.size < 6 %}
+    {% assign empty_books=6 | minus: books.size %}
+    {% for num in (1..empty_books) %}
+      <a class="book empty_book" href="{{ book.url | prepend: book.baseurl }}">
+        <span class="img">
+          <img src="{{ site.book_cover_placeholder }}" alt="{{book.title}}">
+        </span>
+        <span class="title">Скоро сдесь будет еще книга</span>
+        <span class="author">Автор Книги</span>
+      </a>
     {% endfor %}
-  </ul>
+
+  {% endif %}
+</div>
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 

@@ -1,0 +1,28 @@
+<header class="dark_header">
+  <div class="wrapper">
+    <header>
+      
+        {% include logo_with_name.html %}
+        
+        <nav class="header-menu">
+          <ul class="menu">
+            <li><a class="page-link" href="{{ site.baseurl }}/">Main</a></li>
+            {% assign sorted_pages = site.pages | sort: 'order' %}
+            {% for page in sorted_pages %}
+              {% if page.title %}
+                {% if page.order %}
+                  <li>
+                    <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                  </li>
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </nav>
+        
+        <div class="menu-button" id="menu_button">
+          <div class="menu-button-in"></div>
+        </div>
+    </header>
+  </div>
+</header>

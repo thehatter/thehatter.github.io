@@ -1,0 +1,62 @@
+// books_block.scss
+
+.books_block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -14px;
+
+  .book {
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+    margin: 14px;
+    background: #ffffff;
+    color: #333;
+    text-decoration: none;
+    line-height: 1.2;
+    text-align: center;
+
+    width: calc(50% - 40px);
+    
+    @include min-media-query($on-palm) {
+      width: calc(16.6666666% - 40px);
+    }
+  }
+  .book img {
+    width: 100%;
+  }
+
+  .empty_book {
+    .img {
+      background: #282828;
+    }
+    img { 
+      width: calc(100% - 12px);
+    }
+
+    span.img {
+      text-align: center;
+      margin: -6px;
+      margin-bottom: 6px;
+    }
+  }
+
+  .title {
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .author {
+    font-weight: 400;
+    font-size: 12px;
+    padding-bottom: 10px;
+  }
+}
