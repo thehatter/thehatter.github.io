@@ -6,7 +6,7 @@ date: 2018-12-30 00:00:00
 lang: ru
 share: public
 hot: true
-cover_image: "post_cover_books_2019.jpg"
+cover_image: "post_cover_book.png"
 tags: books bookreview
 ---
 *Тут избранные книги которые я прочел за 2018.*  

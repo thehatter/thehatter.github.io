@@ -4,6 +4,7 @@ title:  "Simple hash generation and parsing"
 date:   2015-12-05 22:00:00
 lang: en
 share: private
+cover_image: "post_cover_python_1.png"
 tags: scripts python parsing
 ---
 

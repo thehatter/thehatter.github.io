@@ -2,7 +2,7 @@
 layout: page
 title: Resume
 permalink: /resume/
-order: 1
+order: 2
 ---
 
 

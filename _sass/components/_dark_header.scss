@@ -2,9 +2,12 @@
 
 .dark_header {
   background: $main_dark;
+  min-height: 64px;
   
   header {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
   
   a {
@@ -15,7 +18,9 @@
 
 .logo {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
+  align-content: center;
 }
 
 svg.logo_on_header {
@@ -27,6 +32,16 @@ svg.logo_on_header {
 .logo_name {
   font-size: 24px;
   letter-spacing: 6px;
+  min-height: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 460px) {
+   svg.logo_on_header {
+     display: none;
+   }
 }
 
 
@@ -82,7 +97,7 @@ svg.logo_on_header {
   padding: 20px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 714px) {
 
   .header-menu {
     flex: 1;

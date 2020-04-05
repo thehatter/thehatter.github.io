@@ -2,7 +2,7 @@
 layout: default_with_title
 title: Blog
 permalink: /blog/
-order: -2
+order: 1
 lang: ru
 ref: blog
 ---
