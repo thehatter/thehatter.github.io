@@ -124,15 +124,16 @@ a {
  * Blockquotes
  */
 blockquote {
-    color: $grey-color;
+    color: #000;
+    border-right: 1px solid #DFDCD9;
     border-left: 4px solid #666;
-    padding: 5px 0;
-    padding-left: $spacing-unit / 2;
+
+    padding: 30px 20px 30px 30px;
     font-size: 22px;
-    background: #F5F2F0;
+    background: #FCF9F6;
     letter-spacing: -0.5px;
 
-    margin: 20px 0;
+    margin: 20px calc(-2em + 7px)  20px calc(-2em + 8px);
 
     > :last-child {
         margin-bottom: 0;
@@ -193,6 +194,10 @@ pre {
         padding-right: $spacing-unit / 2;
         padding-left: $spacing-unit / 2;
     }
+}
+
+.post_wrapper {
+  max-width: 900px;
 }
 
 

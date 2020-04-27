@@ -7,11 +7,22 @@ share: private
 cover_image: "post_cover_python_1.png"
 tags: scripts python parsing
 ---
+{::options parse_block_html="true" /}
+
+
+<section class="summary">
+## Summary
 
 Today i will create script to:
 
 - Generate hash list for group of images (about 6-15k)
 - Transform it to .xml document
+</section>
+
+<section class="standart">
+## Hash generator exempel
+
+
 
 {% highlight python %}
 
@@ -68,4 +79,6 @@ xml_file.close
 s = datetime.now() - startTime
 print 'it all took about: %s' % s
 {% endhighlight %}
+
+</section>
 

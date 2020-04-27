@@ -22,13 +22,15 @@ lang: en
       {% endif %}
 
       <span class="over_img">
-        <span class="date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <span class="date">{{ post.date | date: "%d.%m.%Y" }}</span>
         <span class="title"> {{post.title}} </span>
       </span>
     </a>
   {% endfor %}
 </div>
 
+<br>
+<br>
 <h2>Обзоры книг</h2>
 <div class="books_block">
   {% assign books=site.books %}

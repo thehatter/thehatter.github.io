@@ -1,16 +1,36 @@
 ---
 layout: post_layout
 ---
-<div class="post">
 
-  <div class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+{% assign cover_asset_url = site.post_assets_url %}
+{% if page.type == 'book' %}
+  {% assign cover_asset_url = site.book_assets_url %}
+{% endif %}
+<article class="post_article {{ page.type | prepend: 'type_' }}">
+  
+  <header class="post_header">
+    {% if page.cover_image %}
+      <figure class="img">
+        {% if page.hero_image %}
+          <img alt="{{page.title}}" src="{{ page.hero_image | prepend: cover_asset_url }}">
+        {% else %}
+          <img alt="{{page.title}}" src="{{ page.cover_image | prepend: cover_asset_url }}">
+        {% endif %}
+      </figure>
+    {% endif %}
+    <h1 class="title">{{ page.title }}</h1>
+    <div class="meta">
+      <span class="date">
+        {{ page.date | date: "%d.%m.%Y" }}
+      </span>
+      <span class="tags">
+        {% for tag in page.tags %}
+          <a href="/tags/{{ tag }}" class="tag">#{{ tag }}</a>
+        {% endfor %}
+      </span>
+  </header>
 
-  </div>
-
-  <article class="post-content">
+  <div class="wrapper post_wrapper">
     {{ content }}
-  </article>
-
-</div>
+  </div>
+</article>

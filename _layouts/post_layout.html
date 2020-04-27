@@ -1,22 +1,13 @@
 <!DOCTYPE html>
 <html>
-
+  
   {% include head.html %}
 
-  <body class="page-lang-{{ page.lang }}">
-
+  <body class="post_page">
+    
     {% include dark_header.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
-
-        <div class="post-header">
-          {% include lang_swith.html %}
-        </div>
-
-        {{ content }}
-      </div>
-    </div>
+    {{ content }}
 
     {% include footer.html %}
 
