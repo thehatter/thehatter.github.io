@@ -2,6 +2,7 @@
 layout: post
 type: book
 title: Чужак в стране чужой
+permalink: books/stranger-in-a-strange-land
 date: 2020-04-27 11:00:00
 author: Роберт Энсон Хайнлайн
 cover_image: stranger_in_a_strange_land_cover.jpg
