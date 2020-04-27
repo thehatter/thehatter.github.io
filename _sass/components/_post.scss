@@ -4,7 +4,6 @@
 
   .post_header {
     padding: $spacing-unit 16px;
-    min-height: 400px;
     background: $main_dark;
     margin-bottom: 40px;
 
@@ -13,6 +12,9 @@
     justify-content: center;
     align-items: center;
 
+    @include min_media-query($on-laptop) {
+      min-height: 400px;
+    }
 
   }
 

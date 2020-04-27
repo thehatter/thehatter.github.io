@@ -23,7 +23,7 @@ a.hot_post {
   color: #fff;
   min-height: 100px;
 
-  width: calc(50% - (10px));
+  width: calc(100% - (10px));
 
   .over_img {
     position: absolute;
@@ -36,7 +36,11 @@ a.hot_post {
     justify-content: space-between;
   }
 }
-
+@include min-media-query(500px) {
+  a.hot_post {
+    width: calc(50% - (10px));
+  }
+}
 @include min-media-query(1000px) {
   a.hot_post {
     margin: 14px;
