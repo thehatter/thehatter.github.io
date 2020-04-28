@@ -9,7 +9,7 @@ post_assets_url: "/assets/img/post_imgs/"
 post_cover_placeholder: "/assets/img/post_imgs/cover_placeholder.gif"
 book_cover_placeholder: "/assets/img/book_imgs/book_cover_placeholder.gif"
 book_assets_url: "/assets/img/book_imgs/"
-url: "http://thehatter.github.io" # the base hostname & protocol for your site
+url: "https://andreiliotenko.com" # the base hostname & protocol for your site
 twitter_username: AndreiLiotenko
 github_username:  thehatter
 
