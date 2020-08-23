@@ -4,6 +4,7 @@ title:  "Новая механическая клавиатура"
 date:   2020-08-22 22:00:00
 lang: ru
 share: private
+cover_image: "post_cover_mech_keyboard.png"
 
 tags: mech keyboard 
 ---
