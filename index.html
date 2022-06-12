@@ -6,8 +6,7 @@ lang: en
 
 
 <div class="hot_block items_in_3">
-  <!--{% assign hot_posts=site.posts | where: "hot", "true" %}-->
-  {% assign hot_posts=site.posts %}
+  {% assign hot_posts=site.posts | where: "hot", "true" %}
   {% for post in hot_posts %}
     <a class="hot_post" href="{{ post.url | prepend: site.baseurl }}" style="{{ post.cover_image | prepend: site.post_assets_url }}">
       {% if post.cover_image %}
@@ -33,7 +32,7 @@ lang: en
 <br>
 <h2>Обзоры книг</h2>
 <div class="books_block">
-  {% assign books=site.books %}
+  {% assign books=site.posts | where:"type","book" %}
   {% for book in books %}
     <a class="book" href="{{ book.url | prepend: book.baseurl }}">
       <span class="img"><img src="{{ book.cover_image | prepend: site.book_assets_url }}" alt="{{book.title}}"></span>

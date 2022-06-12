@@ -1,2 +1,5 @@
 _site
 .sass-cache
+
+obsidian_synch.rb
+.DS_Store

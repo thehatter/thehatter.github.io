@@ -4,6 +4,7 @@ title:  "Real time exchange rates with node.js and facebook react!"
 date:   2015-10-30 15:38:12
 lang: en
 share: private
+hot: true
 tags: js react node parsing
 ---
 
@@ -56,7 +57,7 @@ var request = require("request"),
     url = "http://finance.tut.by/kurs/",
     exchangeRate = {}; //create object to hold rates
 
-// this function will get data from server 
+// this function will get data from server
 // and save it to json file
 function getData(){
   request(url, function (error, response, body) { //getting page from url
@@ -84,7 +85,7 @@ function createJSONfile(data){
     } else {
       console.log("JSON saved to " + outputFilename);
     }
-  }); 
+  });
 }
 
 setInterval(getData, 5000);

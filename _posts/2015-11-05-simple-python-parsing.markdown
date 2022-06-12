@@ -4,6 +4,7 @@ title:  "Simple hash generation and parsing"
 date:   2015-12-05 22:00:00
 lang: en
 share: private
+hot: true
 cover_image: "post_cover_python_1.png"
 tags: scripts python parsing
 ---
@@ -27,10 +28,10 @@ Today i will create script to:
 {% highlight python %}
 
 # import os to execute linux commands
-import os 
+import os
 
 # import eml.etree for xml manipulations
-import xml.etree.cElementTree as ET 
+import xml.etree.cElementTree as ET
 
 # import minidom to prettify xml
 import xml.dom.minidom
