@@ -7,10 +7,14 @@ layout: post_layout
   {% assign cover_asset_url = site.book_assets_url %}
 {% endif %}
 <article class="post_article {{ page.type | prepend: 'type_' }}">
-  
-  <header class="post_header">
+
+  <header class="post_header" style="background: rgba({{ page.bg_color }},1)">
     {% if page.cover_image %}
       <figure class="img">
+        <div class="shadow_b" style="background: linear-gradient(0deg, rgba({{ page.bg_color }},1) 0%, rgba({{ page.bg_color }},0) 10%);"></div>
+        <div class="shadow_b" style="background: linear-gradient(90deg, rgba({{ page.bg_color }},1) 0%, rgba({{ page.bg_color }},0) 10%);"></div>
+        <div class="shadow_b" style="background: linear-gradient(180deg, rgba({{ page.bg_color }},1) 0%, rgba({{ page.bg_color }},0) 10%);"></div>
+        <div class="shadow_b" style="background: linear-gradient(270deg, rgba({{ page.bg_color }},1) 0%, rgba({{ page.bg_color }},0) 10%);"></div>
         {% if page.hero_image %}
           <img alt="{{page.title}}" src="{{ page.hero_image | prepend: cover_asset_url }}">
         {% else %}

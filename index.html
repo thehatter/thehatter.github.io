@@ -8,8 +8,12 @@ lang: en
 <div class="hot_block items_in_3">
   {% assign hot_posts=site.posts | where: "hot", "true" %}
   {% for post in hot_posts %}
-    <a class="hot_post" href="{{ post.url | prepend: site.baseurl }}" style="{{ post.cover_image | prepend: site.post_assets_url }}">
-      {% if post.cover_image %}
+    {% unless post.img_on_bg_style %}
+      <a class="hot_post" href="{{ post.url | prepend: site.baseurl }}">
+    {% else %}
+      <a class="hot_post" href="{{ post.url | prepend: site.baseurl }}" style="background: url('{{ post.cover_image | prepend: site.post_assets_url }}')">
+    {% endunless %}
+      {% if post.cover_image and post.img_on_bg_style != true %}
         <span class="img">
           <img alt="{{post.title}}" src="{{ post.cover_image | prepend: site.post_assets_url }}">
         </span>

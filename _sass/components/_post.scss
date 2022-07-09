@@ -20,21 +20,29 @@
 
   .post_header figure {
     margin: 0;
+    position: relative;
   }
 
-  
+  .shadow_b {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
   .post_header .title {
     font-size: 24px;
     font-weight: 500;
     color: #fff;
     text-align: center;
-    margin: -60px 0 24px 0;
+    margin: 0 0 24px 0;
 
     @include min_media-query($on-laptop) {
       font-size: 38px;
       max-width: 860px;
     }
-  } 
+  }
 
 
   .post_header .meta {
@@ -46,7 +54,7 @@
       font-weight: 400;
       color: #ccc;
     }
-    
+
     a {
       color: #999;
       text-decoration: none;
@@ -81,10 +89,6 @@
 
   section img {
     margin: 1em 0;
-  }
-  section img.wide_img { 
-    //width: 100%;
-    //margin: 1em -2em;
   }
 }
 

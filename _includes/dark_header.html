@@ -1,9 +1,9 @@
-<header class="dark_header">
+<header class="dark_header" style="background: rgba({{ page.bg_color }},1)">
   <div class="wrapper">
     <header>
-      
+
         {% include logo_with_name.html %}
-        
+
         <nav class="header-menu">
           <ul class="menu">
             {% assign sorted_pages = site.pages | sort: 'order' %}
@@ -18,7 +18,7 @@
             {% endfor %}
           </ul>
         </nav>
-        
+
         <div class="menu-button" id="menu_button">
           <div class="menu-button-in"></div>
         </div>
