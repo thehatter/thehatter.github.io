@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Итоги 2022 года"
+description: "Тревел-лог с ретроспективной рационализацией за 2022 год"
 date:   2023-01-29 00:00:00
 lang: ru
 share: public
