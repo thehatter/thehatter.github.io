@@ -5,7 +5,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0 -14px;
+  margin: 0 0px;
 
   .book {
     display: flex;
@@ -39,7 +39,7 @@
     .img {
       background: #282828;
     }
-    img { 
+    img {
       width: calc(100% - 12px);
     }
 

@@ -1,7 +1,6 @@
 // post.scss
 
 .post_article {
-
   .post_header {
     padding: $spacing-unit 16px;
     background: $main_dark;
@@ -77,6 +76,10 @@
 
   }
 
+  section.standart_no_bottom_padding {
+    padding-bottom: 0;
+  }
+
 
   section h2 {
     font-weight: 500;
@@ -88,7 +91,36 @@
   }
 
   section img {
-    margin: 1em 0;
+    margin: 0 0;
+  }
+
+  figure.annotated_image {
+
+    &.dark_bg {
+      background-color: #000;
+      padding-top: 2em;
+
+      span {
+        background-color: #000;
+        color: #fff;
+      }
+    }
+
+    margin: 1.2em -2em;
+    text-align: center;
+
+    p {
+      margin: 0;
+      padding: 0;
+    }
+
+    span {
+      //background-color: rgb(235, 235, 235);
+      display: block;
+      padding: 0.8em 2em 1em 2em;
+      font-size: 0.9em;
+      color: #666;
+    }
   }
 }
 

@@ -2,7 +2,38 @@
 layout: front
 lang: en
 ---
-
+{% assign cover_asset_url = site.post_assets_url %}
+  {% assign hot_posts=site.posts | where: "super_hot", "true" %}
+  {% for post in hot_posts %}
+  <a class="super_hot_block_a" href="{{ post.url | prepend: site.baseurl }}">
+  <div class="super_hot_block" style="background: rgba({{ post.bg_color }},1)">
+    {% if post.cover_image %}
+      <figure class="img">
+        <div class="shadow_b" style="background: linear-gradient(0deg, rgba({{ post.bg_color }},1) 0%, rgba({{ post.bg_color }},0) 10%);"></div>
+        <div class="shadow_b" style="background: linear-gradient(90deg, rgba({{ post.bg_color }},1) 0%, rgba({{ post.bg_color }},0) 10%);"></div>
+        <div class="shadow_b" style="background: linear-gradient(180deg, rgba({{ post.bg_color }},1) 0%, rgba({{ post.bg_color }},0) 10%);"></div>
+        <div class="shadow_b" style="background: linear-gradient(270deg, rgba({{ post.bg_color }},1) 0%, rgba({{ post.bg_color }},0) 10%);"></div>
+        {% if post.hero_image %}
+          <img alt="{{post.title}}" src="{{ post.hero_image | prepend: cover_asset_url }}">
+        {% else %}
+          <img alt="{{post.title}}" src="{{ post.cover_image | prepend: cover_asset_url }}">
+        {% endif %}
+      </figure>
+    {% endif %}
+    <h1 class="title">{{ post.title }}</h1>
+    <div class="meta">
+      <span class="date">
+        {{ post.date | date: "%d.%m.%Y" }}
+      </span>
+      <span class="tags">
+        {% for tag in post.tags %}
+          <a href="/tags/{{ tag }}" class="tag">#{{ tag }}</a>
+        {% endfor %}
+      </span>
+    </div>
+  </div>
+  </a>
+{% endfor %}
 
 
 <div class="hot_block items_in_3">
@@ -32,8 +63,6 @@ lang: en
   {% endfor %}
 </div>
 
-<br>
-<br>
 <h2>Обзоры книг</h2>
 <div class="books_block">
   {% assign books=site.posts | where:"type","book" %}
