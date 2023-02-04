@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "3d в браузере"
-date:   2023-01-31 22:00:00
+date:   2025-01-31 22:00:00
 lang: ru
 share: public
 hot: true
